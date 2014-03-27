@@ -1,17 +1,20 @@
 <div class="" data-ng-controller="HeaderController">
     <ul class="navbar-nav nav">
         <li>
-            <a class="navbar-brand" href="/">Bukhari Navigator Online Hadith Portal</a>
+            <a class="navbar-brand" href="/">Bukhari Navigator</a>
         </li>
         <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
             <a href="#!/{{item.link}}">{{item.title}}</a>
         </li>
     </ul>
-    <ul class="navbar-nav nav pull-right" data-ng-hide="global.authenticated">
-        <li><a href=""></a>
+    <ul class="navbar-nav nav pull-center" data-ng-hide="global.authenticated">
+        <li><a href="">Home</a>
         </li>
-        <li class="divider-vertical"></li>
-        <li><a href="signin"></a>
+        <li><a href="">About Us</a>
+        </li>
+        <li><a href="">Scholars</a>
+        </li>
+        <li><a href="">Hadith Book Infomation</a>
         </li>
     </ul>
     <ul class="navbar-nav nav pull-right" data-ng-show="global.authenticated">
