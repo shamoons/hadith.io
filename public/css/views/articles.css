@@ -5,3 +5,9 @@ h1 {
 ul.articles li:not(:last-child) {
     border-bottom:1px solid #ccc
 }
+th {
+  width: 90px;
+}
+.form-group {
+  width: 140px;
+}
