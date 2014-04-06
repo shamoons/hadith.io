@@ -8,6 +8,3 @@ ul.articles li:not(:last-child) {
 th {
   width: 90px;
 }
-.form-group {
-  width: 140px;
-}
